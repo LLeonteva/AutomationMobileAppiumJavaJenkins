@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="0" name="tests.SearchTests" time="47.243" errors="0" skipped="0">
+<testsuite tests="18" failures="1" name="suites.TestSuite" time="1,403.715" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib"/>
@@ -15,7 +15,7 @@
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value="unknown"/>
-    <property name="test" value="SearchTests#testListSearchResults"/>
+    <property name="test" value="TestSuite"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="user.dir" value="/Users/lleonteva/QA/AutomationMobileAppiumJavaJenkins"/>
     <property name="java.runtime.version" value="1.8.0_144-b01"/>
@@ -47,7 +47,7 @@
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dtest=SearchTests#testListSearchResults test"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dtest=TestSuite test"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
@@ -56,7 +56,6 @@
     <property name="java.ext.dirs" value="/Users/lleonteva/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
     <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/classes"/>
     <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="java.awt.headless" value="true"/>
     <property name="maven.home" value="/Users/lleonteva/maven"/>
     <property name="file.separator" value="/"/>
     <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
@@ -66,5 +65,61 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="tests.SearchTests" name="testListSearchResults" time="47.243"/>
+  <testcase classname="tests.ArticleTests" name="testSwipeArticleUntilFindElement" time="614.686"/>
+  <testcase classname="tests.ArticleTests" name="testCompareSelectedArticle" time="45.978"/>
+  <testcase classname="tests.ArticleTests" name="testSwipeArticle" time="57.789"/>
+  <testcase classname="tests.ArticleTests" name="testAssertElementPresent" time="38.593">
+    <failure message="An element &apos;id:Java (programming language)&apos; supposed to be present.  Cannot find article title in article page. Add wait?" type="java.lang.AssertionError">java.lang.AssertionError: An element &apos;id:Java (programming language)&apos; supposed to be present.  Cannot find article title in article page. Add wait?
+	at lib.ui.MainPageObject.assertElementPresent(MainPageObject.java:189)
+	at lib.ui.ArticlePageObject.ArticlePresentWithoutWait(ArticlePageObject.java:37)
+	at tests.ArticleTests.testAssertElementPresent(ArticleTests.java:72)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:252)
+	at junit.framework.TestSuite.run(TestSuite.java:247)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:86)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</failure>
+  </testcase>
+  <testcase classname="tests.ChangeAppConditionTests" name="testChangeScreenOrientationOnSearchResults" time="52.113"/>
+  <testcase classname="tests.ChangeAppConditionTests" name="testCheckSearchArticleInBackground" time="42.785"/>
+  <testcase classname="tests.iOS.GetStartedTest" name="testPassThroughWelcome" time="19.698"/>
+  <testcase classname="tests.MyListsTests" name="testCheckSecondArticleSavedInFolderAfterDeletedFirstArticle_2" time="89.449"/>
+  <testcase classname="tests.MyListsTests" name="testSaveFirstArticleToMyListAndDelete" time="85.008"/>
+  <testcase classname="tests.SearchTests" name="testAmountOfNotEmptySearch" time="40.435"/>
+  <testcase classname="tests.SearchTests" name="testAmountOfEmptySearch" time="40.834"/>
+  <testcase classname="tests.SearchTests" name="testSearchResultsContainSearchWord" time="62.058"/>
+  <testcase classname="tests.SearchTests" name="testCancelSearch" time="26.959"/>
+  <testcase classname="tests.SearchTests" name="testClearSearchAndCancel" time="34.986"/>
+  <testcase classname="tests.SearchTests" name="testCompareSearchPlaceholderText" time="26.196"/>
+  <testcase classname="tests.SearchTests" name="testSearchResultsContainTitleAndDescription" time="46.993"/>
+  <testcase classname="tests.SearchTests" name="testCancelSearchAfterArticlesFound" time="45.645"/>
+  <testcase classname="tests.SearchTests" name="testListSearchResults" time="33.51"/>
 </testsuite>
