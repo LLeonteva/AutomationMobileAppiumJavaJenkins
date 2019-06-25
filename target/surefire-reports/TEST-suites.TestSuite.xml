@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="18" failures="1" name="suites.TestSuite" time="1,403.715" errors="0" skipped="0">
+<testsuite tests="18" failures="1" name="suites.TestSuite" time="1,292.207" errors="4" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib"/>
@@ -34,7 +34,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="52.0"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="os.version" value="10.14.4"/>
+    <property name="os.version" value="10.14.5"/>
     <property name="library.jansi.path" value="//Users/lleonteva/maven/lib/jansi-native"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="user.home" value="/Users/lleonteva"/>
@@ -65,11 +65,260 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="tests.ArticleTests" name="testSwipeArticleUntilFindElement" time="614.686"/>
-  <testcase classname="tests.ArticleTests" name="testCompareSelectedArticle" time="45.978"/>
-  <testcase classname="tests.ArticleTests" name="testSwipeArticle" time="57.789"/>
-  <testcase classname="tests.ArticleTests" name="testAssertElementPresent" time="38.593">
-    <failure message="An element &apos;id:Java (programming language)&apos; supposed to be present.  Cannot find article title in article page. Add wait?" type="java.lang.AssertionError">java.lang.AssertionError: An element &apos;id:Java (programming language)&apos; supposed to be present.  Cannot find article title in article page. Add wait?
+  <testcase classname="tests.ArticleTests" name="testSwipeArticleUntilFindElement" time="140.31">
+    <error message="An unknown server-side error occurred while processing the command. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 150 milliseconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;Liudmilas-MacBook-Pro.local&apos;, ip: &apos;10.0.0.109&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.5&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=org.wikipedia, app=/Users/lleonteva/QA/AutomationAppium/JavaAppiumAutomation/apks/org.wikipedia.apk, deviceScreenSize=1440x2960, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=192.168.56.103:5555, platform=LINUX, deviceUDID=192.168.56.103:5555, appActivity=.main.MainActivity, desired={appPackage=org.wikipedia, appActivity=.main.MainActivity, app=/Users/lleonteva/QA/AutomationAppium/JavaAppiumAutomation/apks/org.wikipedia.apk, platformVersion=8.0.0, automationName=Appium, platformName=Android, deviceName=AndroidTestDevice}, platformVersion=8.0.0, webStorageEnabled=false, locationContextEnabled=false, automationName=Appium, takesScreenshot=true, javascriptEnabled=true, deviceModel=Jenkins_Samsung Galaxy S8_v8.0, platformName=Android, deviceManufacturer=Genymotion}]
+Session ID: 29e8c9bf-7e30-46dc-96f0-7848e24e8893" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 150 milliseconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;Liudmilas-MacBook-Pro.local&apos;, ip: &apos;10.0.0.109&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.5&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=org.wikipedia, app=/Users/lleonteva/QA/AutomationAppium/JavaAppiumAutomation/apks/org.wikipedia.apk, deviceScreenSize=1440x2960, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=192.168.56.103:5555, platform=LINUX, deviceUDID=192.168.56.103:5555, appActivity=.main.MainActivity, desired={appPackage=org.wikipedia, appActivity=.main.MainActivity, app=/Users/lleonteva/QA/AutomationAppium/JavaAppiumAutomation/apks/org.wikipedia.apk, platformVersion=8.0.0, automationName=Appium, platformName=Android, deviceName=AndroidTestDevice}, platformVersion=8.0.0, webStorageEnabled=false, locationContextEnabled=false, automationName=Appium, takesScreenshot=true, javascriptEnabled=true, deviceModel=Jenkins_Samsung Galaxy S8_v8.0, platformName=Android, deviceManufacturer=Genymotion}]
+Session ID: 29e8c9bf-7e30-46dc-96f0-7848e24e8893
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at io.appium.java_client.AppiumDriver.performTouchAction(AppiumDriver.java:336)
+	at io.appium.java_client.TouchAction.perform(TouchAction.java:323)
+	at lib.ui.MainPageObject.swipeUp(MainPageObject.java:78)
+	at lib.ui.MainPageObject.swipeUpQuick(MainPageObject.java:82)
+	at lib.ui.MainPageObject.swipeUpToFindElement(MainPageObject.java:97)
+	at lib.ui.ArticlePageObject.swipeToFooter(ArticlePageObject.java:42)
+	at tests.ArticleTests.testSwipeArticleUntilFindElement(ArticleTests.java:56)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:252)
+	at junit.framework.TestSuite.run(TestSuite.java:247)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:86)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</error>
+  </testcase>
+  <testcase classname="tests.ArticleTests" name="testCompareSelectedArticle" time="143.219">
+    <error message="Timed out after 15 seconds: Cannot find article title on page.
+
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;Liudmilas-MacBook-Pro.local&apos;, ip: &apos;10.0.0.109&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.5&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=org.wikipedia, app=/Users/lleonteva/QA/AutomationAppium/JavaAppiumAutomation/apks/org.wikipedia.apk, deviceScreenSize=1440x2960, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=192.168.56.103:5555, platform=LINUX, deviceUDID=192.168.56.103:5555, appActivity=.main.MainActivity, desired={appPackage=org.wikipedia, appActivity=.main.MainActivity, app=/Users/lleonteva/QA/AutomationAppium/JavaAppiumAutomation/apks/org.wikipedia.apk, platformVersion=8.0.0, automationName=Appium, platformName=Android, deviceName=AndroidTestDevice}, platformVersion=8.0.0, webStorageEnabled=false, locationContextEnabled=false, automationName=Appium, takesScreenshot=true, javascriptEnabled=true, deviceModel=Jenkins_Samsung Galaxy S8_v8.0, platformName=Android, deviceManufacturer=Genymotion}]
+Session ID: bde61628-8da8-4b50-b41e-004b9fd75488" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Timed out after 15 seconds: Cannot find article title on page.
+
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;Liudmilas-MacBook-Pro.local&apos;, ip: &apos;10.0.0.109&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.5&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=org.wikipedia, app=/Users/lleonteva/QA/AutomationAppium/JavaAppiumAutomation/apks/org.wikipedia.apk, deviceScreenSize=1440x2960, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=192.168.56.103:5555, platform=LINUX, deviceUDID=192.168.56.103:5555, appActivity=.main.MainActivity, desired={appPackage=org.wikipedia, appActivity=.main.MainActivity, app=/Users/lleonteva/QA/AutomationAppium/JavaAppiumAutomation/apks/org.wikipedia.apk, platformVersion=8.0.0, automationName=Appium, platformName=Android, deviceName=AndroidTestDevice}, platformVersion=8.0.0, webStorageEnabled=false, locationContextEnabled=false, automationName=Appium, takesScreenshot=true, javascriptEnabled=true, deviceModel=Jenkins_Samsung Galaxy S8_v8.0, platformName=Android, deviceManufacturer=Genymotion}]
+Session ID: bde61628-8da8-4b50-b41e-004b9fd75488
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:261)
+	at lib.ui.MainPageObject.waitForElementPresent(MainPageObject.java:29)
+	at lib.ui.ArticlePageObject.waitForTitleElement(ArticlePageObject.java:24)
+	at lib.ui.ArticlePageObject.getArticleTitle(ArticlePageObject.java:28)
+	at tests.ArticleTests.testCompareSelectedArticle(ArticleTests.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:252)
+	at junit.framework.TestSuite.run(TestSuite.java:247)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:86)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 26.14 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;Liudmilas-MacBook-Pro.local&apos;, ip: &apos;10.0.0.109&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.5&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=org.wikipedia, app=/Users/lleonteva/QA/AutomationAppium/JavaAppiumAutomation/apks/org.wikipedia.apk, deviceScreenSize=1440x2960, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=192.168.56.103:5555, platform=LINUX, deviceUDID=192.168.56.103:5555, appActivity=.main.MainActivity, desired={appPackage=org.wikipedia, appActivity=.main.MainActivity, app=/Users/lleonteva/QA/AutomationAppium/JavaAppiumAutomation/apks/org.wikipedia.apk, platformVersion=8.0.0, automationName=Appium, platformName=Android, deviceName=AndroidTestDevice}, platformVersion=8.0.0, webStorageEnabled=false, locationContextEnabled=false, automationName=Appium, takesScreenshot=true, javascriptEnabled=true, deviceModel=Jenkins_Samsung Galaxy S8_v8.0, platformName=Android, deviceManufacturer=Genymotion}]
+Session ID: bde61628-8da8-4b50-b41e-004b9fd75488
+*** Element info: {Using=id, value=org.wikipedia:id/view_page_title_text}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:56)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:413)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:64)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:52)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:899)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:41)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:181)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:178)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:238)
+	... 37 more
+</error>
+  </testcase>
+  <testcase classname="tests.ArticleTests" name="testSwipeArticle" time="87.781">
+    <error message="Timed out after 5 seconds: Cannot find search input after clicking search init element
+
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;Liudmilas-MacBook-Pro.local&apos;, ip: &apos;10.0.0.109&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.5&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=org.wikipedia, app=/Users/lleonteva/QA/AutomationAppium/JavaAppiumAutomation/apks/org.wikipedia.apk, deviceScreenSize=1440x2960, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=192.168.56.103:5555, platform=LINUX, deviceUDID=192.168.56.103:5555, appActivity=.main.MainActivity, desired={appPackage=org.wikipedia, appActivity=.main.MainActivity, app=/Users/lleonteva/QA/AutomationAppium/JavaAppiumAutomation/apks/org.wikipedia.apk, platformVersion=8.0.0, automationName=Appium, platformName=Android, deviceName=AndroidTestDevice}, platformVersion=8.0.0, webStorageEnabled=false, locationContextEnabled=false, automationName=Appium, takesScreenshot=true, javascriptEnabled=true, deviceModel=Jenkins_Samsung Galaxy S8_v8.0, platformName=Android, deviceManufacturer=Genymotion}]
+Session ID: 9cdd17c6-e462-40a7-9c3c-2c771039a188" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Timed out after 5 seconds: Cannot find search input after clicking search init element
+
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;Liudmilas-MacBook-Pro.local&apos;, ip: &apos;10.0.0.109&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.5&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=org.wikipedia, app=/Users/lleonteva/QA/AutomationAppium/JavaAppiumAutomation/apks/org.wikipedia.apk, deviceScreenSize=1440x2960, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=192.168.56.103:5555, platform=LINUX, deviceUDID=192.168.56.103:5555, appActivity=.main.MainActivity, desired={appPackage=org.wikipedia, appActivity=.main.MainActivity, app=/Users/lleonteva/QA/AutomationAppium/JavaAppiumAutomation/apks/org.wikipedia.apk, platformVersion=8.0.0, automationName=Appium, platformName=Android, deviceName=AndroidTestDevice}, platformVersion=8.0.0, webStorageEnabled=false, locationContextEnabled=false, automationName=Appium, takesScreenshot=true, javascriptEnabled=true, deviceModel=Jenkins_Samsung Galaxy S8_v8.0, platformName=Android, deviceManufacturer=Genymotion}]
+Session ID: 9cdd17c6-e462-40a7-9c3c-2c771039a188
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:261)
+	at lib.ui.MainPageObject.waitForElementPresent(MainPageObject.java:29)
+	at lib.ui.MainPageObject.waitForElementPresent(MainPageObject.java:35)
+	at lib.ui.SearchPageObject.initSearchInput(SearchPageObject.java:43)
+	at tests.ArticleTests.testSwipeArticle(ArticleTests.java:35)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:252)
+	at junit.framework.TestSuite.run(TestSuite.java:247)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:86)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 171 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;Liudmilas-MacBook-Pro.local&apos;, ip: &apos;10.0.0.109&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.5&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=org.wikipedia, app=/Users/lleonteva/QA/AutomationAppium/JavaAppiumAutomation/apks/org.wikipedia.apk, deviceScreenSize=1440x2960, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=192.168.56.103:5555, platform=LINUX, deviceUDID=192.168.56.103:5555, appActivity=.main.MainActivity, desired={appPackage=org.wikipedia, appActivity=.main.MainActivity, app=/Users/lleonteva/QA/AutomationAppium/JavaAppiumAutomation/apks/org.wikipedia.apk, platformVersion=8.0.0, automationName=Appium, platformName=Android, deviceName=AndroidTestDevice}, platformVersion=8.0.0, webStorageEnabled=false, locationContextEnabled=false, automationName=Appium, takesScreenshot=true, javascriptEnabled=true, deviceModel=Jenkins_Samsung Galaxy S8_v8.0, platformName=Android, deviceManufacturer=Genymotion}]
+Session ID: 9cdd17c6-e462-40a7-9c3c-2c771039a188
+*** Element info: {Using=xpath, value=//*[contains(@text,&apos;Search…&apos;)]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:56)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:134)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:52)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:899)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:41)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:181)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:178)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:238)
+	... 37 more
+</error>
+  </testcase>
+  <testcase classname="tests.ArticleTests" name="testAssertElementPresent" time="89.842">
+    <failure message="An element &apos;id:org.wikipedia:id/view_page_title_text&apos; supposed to be present.  Cannot find article title in article page. Add wait?" type="java.lang.AssertionError">java.lang.AssertionError: An element &apos;id:org.wikipedia:id/view_page_title_text&apos; supposed to be present.  Cannot find article title in article page. Add wait?
 	at lib.ui.MainPageObject.assertElementPresent(MainPageObject.java:189)
 	at lib.ui.ArticlePageObject.ArticlePresentWithoutWait(ArticlePageObject.java:37)
 	at tests.ArticleTests.testAssertElementPresent(ArticleTests.java:72)
@@ -108,18 +357,108 @@
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </failure>
   </testcase>
-  <testcase classname="tests.ChangeAppConditionTests" name="testChangeScreenOrientationOnSearchResults" time="52.113"/>
-  <testcase classname="tests.ChangeAppConditionTests" name="testCheckSearchArticleInBackground" time="42.785"/>
-  <testcase classname="tests.iOS.GetStartedTest" name="testPassThroughWelcome" time="19.698"/>
-  <testcase classname="tests.MyListsTests" name="testCheckSecondArticleSavedInFolderAfterDeletedFirstArticle_2" time="89.449"/>
-  <testcase classname="tests.MyListsTests" name="testSaveFirstArticleToMyListAndDelete" time="85.008"/>
-  <testcase classname="tests.SearchTests" name="testAmountOfNotEmptySearch" time="40.435"/>
-  <testcase classname="tests.SearchTests" name="testAmountOfEmptySearch" time="40.834"/>
-  <testcase classname="tests.SearchTests" name="testSearchResultsContainSearchWord" time="62.058"/>
-  <testcase classname="tests.SearchTests" name="testCancelSearch" time="26.959"/>
-  <testcase classname="tests.SearchTests" name="testClearSearchAndCancel" time="34.986"/>
-  <testcase classname="tests.SearchTests" name="testCompareSearchPlaceholderText" time="26.196"/>
-  <testcase classname="tests.SearchTests" name="testSearchResultsContainTitleAndDescription" time="46.993"/>
-  <testcase classname="tests.SearchTests" name="testCancelSearchAfterArticlesFound" time="45.645"/>
-  <testcase classname="tests.SearchTests" name="testListSearchResults" time="33.51"/>
+  <testcase classname="tests.ChangeAppConditionTests" name="testChangeScreenOrientationOnSearchResults" time="144.747"/>
+  <testcase classname="tests.ChangeAppConditionTests" name="testCheckSearchArticleInBackground" time="102.191"/>
+  <testcase classname="tests.iOS.GetStartedTest" name="testPassThroughWelcome" time="48.959"/>
+  <testcase classname="tests.MyListsTests" name="testCheckSecondArticleSavedInFolderAfterDeletedFirstArticle_2" time="40.948"/>
+  <testcase classname="tests.MyListsTests" name="testSaveFirstArticleToMyListAndDelete" time="195.959"/>
+  <testcase classname="tests.SearchTests" name="testAmountOfNotEmptySearch" time="41.545"/>
+  <testcase classname="tests.SearchTests" name="testAmountOfEmptySearch" time="38.094"/>
+  <testcase classname="tests.SearchTests" name="testSearchResultsContainSearchWord" time="26.298"/>
+  <testcase classname="tests.SearchTests" name="testCancelSearch" time="18.852"/>
+  <testcase classname="tests.SearchTests" name="testClearSearchAndCancel" time="25.505"/>
+  <testcase classname="tests.SearchTests" name="testCompareSearchPlaceholderText" time="18.893"/>
+  <testcase classname="tests.SearchTests" name="testSearchResultsContainTitleAndDescription" time="78.319">
+    <error message="Timed out after 15 seconds: Cannot find search result with title &apos;Android version history&apos; and desc &apos;Wikimedia list article&apos;, locator: xpath://*[@resource-id=&apos;org.wikipedia:id/page_list_item_container&apos; and .//@text=&apos;Android version history&apos; and .//@text=&apos;Wikimedia list article&apos;]
+
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;Liudmilas-MacBook-Pro.local&apos;, ip: &apos;10.0.0.109&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.5&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=org.wikipedia, app=/Users/lleonteva/QA/AutomationAppium/JavaAppiumAutomation/apks/org.wikipedia.apk, deviceScreenSize=1440x2960, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=192.168.56.103:5555, platform=LINUX, deviceUDID=192.168.56.103:5555, appActivity=.main.MainActivity, desired={appPackage=org.wikipedia, appActivity=.main.MainActivity, app=/Users/lleonteva/QA/AutomationAppium/JavaAppiumAutomation/apks/org.wikipedia.apk, platformVersion=8.0.0, automationName=Appium, platformName=Android, deviceName=AndroidTestDevice}, platformVersion=8.0.0, webStorageEnabled=false, locationContextEnabled=false, automationName=Appium, takesScreenshot=true, javascriptEnabled=true, deviceModel=Jenkins_Samsung Galaxy S8_v8.0, platformName=Android, deviceManufacturer=Genymotion}]
+Session ID: f113f967-5109-4d5d-a042-9a5e691c9816" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Timed out after 15 seconds: Cannot find search result with title &apos;Android version history&apos; and desc &apos;Wikimedia list article&apos;, locator: xpath://*[@resource-id=&apos;org.wikipedia:id/page_list_item_container&apos; and .//@text=&apos;Android version history&apos; and .//@text=&apos;Wikimedia list article&apos;]
+
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;Liudmilas-MacBook-Pro.local&apos;, ip: &apos;10.0.0.109&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.5&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=org.wikipedia, app=/Users/lleonteva/QA/AutomationAppium/JavaAppiumAutomation/apks/org.wikipedia.apk, deviceScreenSize=1440x2960, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=192.168.56.103:5555, platform=LINUX, deviceUDID=192.168.56.103:5555, appActivity=.main.MainActivity, desired={appPackage=org.wikipedia, appActivity=.main.MainActivity, app=/Users/lleonteva/QA/AutomationAppium/JavaAppiumAutomation/apks/org.wikipedia.apk, platformVersion=8.0.0, automationName=Appium, platformName=Android, deviceName=AndroidTestDevice}, platformVersion=8.0.0, webStorageEnabled=false, locationContextEnabled=false, automationName=Appium, takesScreenshot=true, javascriptEnabled=true, deviceModel=Jenkins_Samsung Galaxy S8_v8.0, platformName=Android, deviceManufacturer=Genymotion}]
+Session ID: f113f967-5109-4d5d-a042-9a5e691c9816
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:261)
+	at lib.ui.MainPageObject.waitForElementPresent(MainPageObject.java:29)
+	at lib.ui.SearchPageObject.waitForElementByTitleAndDescription(SearchPageObject.java:69)
+	at tests.SearchTests.testSearchResultsContainTitleAndDescription(SearchTests.java:146)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:252)
+	at junit.framework.TestSuite.run(TestSuite.java:247)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:86)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 141 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;Liudmilas-MacBook-Pro.local&apos;, ip: &apos;10.0.0.109&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.5&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=org.wikipedia, app=/Users/lleonteva/QA/AutomationAppium/JavaAppiumAutomation/apks/org.wikipedia.apk, deviceScreenSize=1440x2960, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=192.168.56.103:5555, platform=LINUX, deviceUDID=192.168.56.103:5555, appActivity=.main.MainActivity, desired={appPackage=org.wikipedia, appActivity=.main.MainActivity, app=/Users/lleonteva/QA/AutomationAppium/JavaAppiumAutomation/apks/org.wikipedia.apk, platformVersion=8.0.0, automationName=Appium, platformName=Android, deviceName=AndroidTestDevice}, platformVersion=8.0.0, webStorageEnabled=false, locationContextEnabled=false, automationName=Appium, takesScreenshot=true, javascriptEnabled=true, deviceModel=Jenkins_Samsung Galaxy S8_v8.0, platformName=Android, deviceManufacturer=Genymotion}]
+Session ID: f113f967-5109-4d5d-a042-9a5e691c9816
+*** Element info: {Using=xpath, value=//*[@resource-id=&apos;org.wikipedia:id/page_list_item_container&apos; and .//@text=&apos;Android version history&apos; and .//@text=&apos;Wikimedia list article&apos;]}
+	at sun.reflect.GeneratedConstructorAccessor10.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:56)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:134)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:52)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:899)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:41)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:181)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:178)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:238)
+	... 36 more
+</error>
+  </testcase>
+  <testcase classname="tests.SearchTests" name="testCancelSearchAfterArticlesFound" time="25.179"/>
+  <testcase classname="tests.SearchTests" name="testListSearchResults" time="25.566"/>
 </testsuite>

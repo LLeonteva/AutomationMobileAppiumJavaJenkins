@@ -145,9 +145,9 @@ public class SearchTests extends CoreTestCase
                 "Wikimedia disambiguation page");
         SearchPageObject.waitForElementByTitleAndDescription(
                 "Android version history",
-                "Wikimedia list article");
+                "Wikipedia list");
         SearchPageObject.waitForElementByTitleAndDescription(
                 "Android software development",
-                "Fastboot erase config");
+                "Process of writing software for Android operating system");
     }
 }
